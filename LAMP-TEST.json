@@ -752,14 +752,8 @@
             "commands": {
               
               "ChangeSqlModToExec": {
-                "command": {
-                  "Fn::Join": [
-                    "",
-                    [
-                      "chmod -R 700 ", "/mysqlScrips"
-                    ]
-                  ]
-                }
+                   "command":  "chmod -R 700 /mysqlScripts",
+                   "ignoreErrors" : "true"
               },
                             
               "01_set_mysql_root_password": {
