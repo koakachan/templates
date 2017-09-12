@@ -744,10 +744,17 @@
       "Config001": {
             "commands": {
               
-              "ChangeSqlModToExec" : {
-                "command" : "chmod -R 700 /mysqlScrips"
-              },              
-              
+              "ChangeSqlModToExec": {
+                "command": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "chmod -R 700 /mysqlScrips"
+                    ]
+                  ]
+                }
+              },
+                            
               "01_set_mysql_root_password": {
                 "command": {
                   "Fn::Join": [
