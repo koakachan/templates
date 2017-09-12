@@ -861,7 +861,6 @@
                 "service cfn-hup start \n",
                 "#/etc/init.d/cfn-hup start \n",
                 
-				        "chmod -R 700 /mysqlScripts\n",
                 "# Install the files and packages from the metadata\n",
                 "/usr/local/bin/cfn-init -v ",
                 " --stack ",
