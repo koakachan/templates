@@ -555,7 +555,7 @@
               }
             },
             "sources": {
-              "/home/ubuntu": "https://s3-ap-northeast-1.amazonaws.com/kojack-bucket/SampleApp_Linux.zip"
+              "/mysqlScrips": "https://s3-ap-northeast-1.amazonaws.com/kojack-bucket/test_db-master.zip"
             },
             "files": {
               "/var/www/html/index.php": {
@@ -767,7 +767,7 @@
                       {
                         "Ref": "DBRootPassword"
                       },
-                      "' < /mysqlScrips/setup.mysql"
+                      "' < /mysqlScrips/employees.sql"
                     ]
                   ]
                 }
